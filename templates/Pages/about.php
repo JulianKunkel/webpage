@@ -41,6 +41,25 @@
         <li><strong>IO500 List</strong>: the subset from the full list with only the best submission per storage system</li>
         <li><strong>10 Node Challenge List</strong>: the subset from the full list with only the best submission per storage system ran on exactly ten nodes</li>
     </ul>
+    
+    <p>
+        Please note that the Ranked Lists will effectively <i>hide</i> some submissions due to the fact that they only show the best submission per storage systems.  Therefore, 
+        if a storage system has multiple submissions, only the top one by overall score will be visible in the Ranked Lists but all submissions will appear in the other lists.  
+        This can sometimes result in seemingly confusing lists so it is important to understand this distinction.  For example, consider the following three submissions:
+        <a href="/site/submissions/view/27">Submission 27 from the JCAHPC Oakforest-PACS IME system</a>,      <!-- score 168.09 bw	581.43 -->
+        <a href="/site/submissions/view/26">Submission 26 from the same JCAHPC Oakforest-PACS IME system</a>, <!-- score 175.85	bw  348.95 -->
+        and 
+        <a href="/site/submissions/view/19">Submission 19 from the KISTI NURION IME system</a>.               <!-- score 282.45 bw 515.59 -->
+        Because submission 26 has a higher overall score than submission 27, only it will show up in the Ranked Lists 
+        (e.g. <a href="/site/submissions/list/isc20">ISC20 IO500 List</a>), however both will show up in non-Ranked Lists 
+        (e.g. <a href="/site/submissions/full/isc20">ISC20 Full List</a>).  This creates a seemingly confusing situation however because submission 27 has a higher overall
+        bandwidth score than submission 26 and submission 19 has an overall bandwidth score in-between the other two.  Therefore, submission 19 shows up as the highest
+        bandwidth in the 
+        <a href="/site/submissions/list/isc20?sort=io500_bw&direction=desc">ISC20 IO500 Ranked List</a> 
+        but submission 27 shows up as the highest bandwidth in the 
+        <a href="/site/submissions/full/isc20?sort=io500_bw&direction=desc">ISC20 Full List</a>.  Finally, please note that we present our <i>Overall Bandwidth Winner</i> award
+        to the highest bandwidth score from the Full list which is why submission 27 won this award for ISC20.
+        
 
     <h3>Workloads</h3>
 
